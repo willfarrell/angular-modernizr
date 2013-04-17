@@ -8,7 +8,7 @@ Note :after are not alllowed in <input>
 	display: none;
 }*/
 
-/*.reveal {
+/*.forms-reveal {
 	margin: 0 0 0 -0.8em;
 	color: #666;
 	cursor: pointer;
@@ -16,14 +16,14 @@ Note :after are not alllowed in <input>
 	font-size: 2.0em;
 }
 
-.reveal:after {
+.forms-reveal:after {
 	position: relative;
 	top:.5em;
 	content: "\0900"; /* Devanagari sign inverted candrabindu - Not supported in some fonts *
 }*/
 
 /* using icon-eye-open */
-.reveal {
+.forms-reveal {
 	margin: 0 0 0 -1.8em;
 	color: #666;
 	cursor: pointer;

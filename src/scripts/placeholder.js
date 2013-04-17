@@ -38,9 +38,9 @@ angular.module('io.modernizr')
 				//console.log('keypress');
 				//console.log(e);
 				if (!ngModel.$viewValue) {
-					element.addClass('placeholder');
+					element.addClass('forms-placeholder');
 				} else {
-					element.removeClass('placeholder');
+					element.removeClass('forms-placeholder');
 				}
 			}
 			

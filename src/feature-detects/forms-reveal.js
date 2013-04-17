@@ -21,7 +21,7 @@ function selectorSupported(selector) {
 	sheet = link.sheet || link.styleSheet;
 
 	if (!(sheet && selector)) { return false; }
-	if (impl.hasFeature('CSS2', '') {
+	if (impl.hasFeature('CSS2', '')) {
 		try {
 			sheet.insertRule(selector + '{ }', 0);
 			sheet.deleteRule(sheet.cssRules.length - 1);
