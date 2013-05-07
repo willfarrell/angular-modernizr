@@ -50,6 +50,7 @@ angular.module('io.modernizr')
 
 			//blur(); // for static strings - doesn't work (needed)
 			attrs.$observe('placeholder', blur); // for dynamic strings
+			$timeout(blur,0); // for static
 			$timeout(keyup,0); // called on model render
 		}
 	};

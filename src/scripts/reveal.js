@@ -8,6 +8,8 @@ Apply to !IE and IE 9
 Changeing type is not allowed in IE 8
 
 Requires: css .form-reveal
+
+** refactor using ??  https://www.youtube.com/watch?v=_6ijcqI5fi8&list=PLP6DbQBkn9ymGQh2qpk9ImLHdSH5T7yw7
 */
 
 angular.module('io.modernizr')
