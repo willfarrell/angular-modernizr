@@ -1,0 +1,20 @@
+
+/*
+Note :after are not alllowed in <input>
+*/
+
+/* Clear existing on IE 10 */
+/*::-ms-clear {
+	display: none;
+}*/
+
+/* using icon-eye-open */
+.forms-reveal {
+	margin: 0 0 0 -1.8em;
+	color: #666;
+	cursor: pointer;
+	font-style: normal;
+	font-size: 1.0em;
+	position: relative;
+	top:-0.2em;
+}
