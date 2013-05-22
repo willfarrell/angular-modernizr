@@ -33,20 +33,25 @@ angular.module('io.modernizr')
 			}
 
 			// Check if password type
-			if (attrs.type === 'password' && (!IE || IE === 9) ) {
-				var button = $compile('<i class="forms-reveal">&nbsp;&nbsp;</i>')(scope); // &nbsp;&nbsp;
+			if (attrs.type === 'password') {//} && (!IE || IE === 9) ) {
+				try {
+					element[0].type = 'password';
+					
+					var button = $compile('<i class="forms-reveal">&nbsp;&nbsp;</i>')(scope); // &nbsp;&nbsp;
 
-				// show on click / mousedown / ontouch
-				button.bind('mousedown', showPassword);
-				//button.bind('mouseover', show);
-
-				// hide on mouseout / mouseup / touchout / touchup
-				button.bind('mouseout', hidePassword);
-				button.bind('mouseup', hidePassword);
-
-				//button.bind('keypress', toggleButton);
-
-				element.after(button);
+					// show on click / mousedown / ontouch
+					button.bind('mousedown', showPassword);
+					//button.bind('mouseover', show);
+	
+					// hide on mouseout / mouseup / touchout / touchup
+					button.bind('mouseout', hidePassword);
+					button.bind('mouseup', hidePassword);
+	
+					//button.bind('keypress', toggleButton);
+	
+					element.after(button);
+				} catch (e) {}
+				
 
 				/*function toggleButton(e) {
 					console.log(element[0].nextSibling);

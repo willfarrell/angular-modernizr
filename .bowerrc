@@ -1,0 +1,7 @@
+{
+  "directory": "src/components",
+  "json": "bower.json",
+  "searchpath": [
+    "https://bower.herokuapp.com"
+  ]
+}

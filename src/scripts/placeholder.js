@@ -19,7 +19,9 @@ angular.module('io.modernizr')
 				if (element.val() === attrs.placeholder && !ngModel.$viewValue) {
 					element.val('');
 					if (attrs.password) {
-						if (!IE || (IE >= 9 && IE < 10)) { element[0].type = 'password'; }
+						try {
+							element[0].type = 'password';
+						} catch (e) {}
 					}
 				}
 			}
@@ -29,7 +31,9 @@ angular.module('io.modernizr')
 				if ( (element.val() === '' || element.val() === attrs.placeholder) && !ngModel.$viewValue) {
 					element.val(attrs.placeholder);
 					if (attrs.password) {
-						if (!IE || (IE >= 9 && IE < 10)) { element[0].type = 'text'; }
+						try {
+							element[0].type = 'text';
+						} catch (e) {}
 					}
 				}
 			}

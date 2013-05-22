@@ -13,7 +13,7 @@ Note :after are not alllowed in <input>
 	color: #666;
 	cursor: pointer;
 	font-style: normal;
-	font-size: 2.0em;
+	font-size: 200%;
 }
 
 .forms-reveal:after {

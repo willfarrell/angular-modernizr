@@ -9,8 +9,8 @@
     "url": "git://github.com/willfarrell/angular-modernizr.git"
   },
   "dependencies": {
-  	"modernizr":null,
-  	"json3":null,
+    "modernizr":null,
+    "json3":null,
     "angular": null
   }
 }

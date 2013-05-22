@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+	<meta http-equiv="Content-Type"content="text/html; charset=UTF-8">
+	<meta name="robots"content="index, follow"><!-- index, noindex, follow, nofollow -->
+
+	<title></title>
+	<meta name="description"content="">
+	<meta name="author"content="humans.txt">
+	
+	<!-- angular-modernizr-->
+	<link rel="stylesheet" href="styles/forms-placeholder.css">
+	<link rel="stylesheet" href="styles/forms-reveal.text.css">
+	<!-- endbuild -->
+
+</head>
+<body class="container" data-ng-controller="AppCtrl">
+
+<!--<div data-ng-view></div>-->
+<h2>Modernizr</h2>
+<h3>Placeholder</h3>
+<div class="well" data-ng-controller="AppCtrl">
+	<form name="form">
+		<input type="password" name="password" placeholder="Password" data-ng-model="inputValue" required>
+	</form>
+</div>
+
+<h3>Password Reveal</h3>
+<div class="well" data-ng-controller="AppCtrl">
+	<form name="form">
+		<input type="password" name="password" data-ng-model="inputValue" required>
+	</form>
+</div>
+
+<script src="components/angular/angular.js"></script>
+
+<!-- !Liabraries -->
+
+<!-- !Angular.io -->
+<script>
+angular.module('io.modernizr', []);
+angular.module('app', ['io.modernizr']);
+
+function AppCtrl($scope) {
+	
+};
+
+</script>
+
+<script src="scripts/placeholder.js"></script>
+<script src="scripts/reveal.text.js"></script>
+
+</body>
+</html>
