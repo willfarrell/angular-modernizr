@@ -37,7 +37,7 @@ angular.module('io.modernizr')
 				try {
 					element[0].type = 'password';
 					
-					var button = $compile('<i class="forms-reveal">&nbsp;&nbsp;</i>')(scope); // &nbsp;&nbsp;
+					var button = $compile('<i class="forms-reveal"></i>')(scope); // &nbsp;&nbsp;
 
 					// show on click / mousedown / ontouch
 					button.bind('mousedown', showPassword);
