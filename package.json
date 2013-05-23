@@ -24,7 +24,6 @@
     "grunt-contrib-compass": "~0.1.1",
     "grunt-contrib-less": "~0.5.0",
     "grunt-csscss": "~0.1.0",
-    "gruntacular": "~0.1.1",
     
     "grunt-contrib-csslint": "~0.4.0",
     "grunt-contrib-jshint": "~0.1.1",
