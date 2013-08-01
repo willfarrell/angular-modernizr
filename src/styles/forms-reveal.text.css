@@ -19,5 +19,5 @@ Note :after are not alllowed in <input>
 .forms-reveal:after {
 	position: relative;
 	top:.5em;
-	content: "\0900"; /* Devanagari sign inverted candrabindu - Not supported in some fonts *
+	content: "\0900"; /* Devanagari sign inverted candrabindu - Not supported in some fonts */
 }
