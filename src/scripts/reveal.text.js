@@ -12,7 +12,7 @@ Requires: css .form-reveal
 ** refactor using ??  https://www.youtube.com/watch?v=_6ijcqI5fi8&list=PLP6DbQBkn9ymGQh2qpk9ImLHdSH5T7yw7
 */
 
-angular.module('io.modernizr')
+angular.module('io.modernizr', [])
 .directive('input', ['$compile', function($compile) {
 	return {
 		restrict: 'E',
