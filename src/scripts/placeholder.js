@@ -4,7 +4,7 @@
 IE 9 Full
 IE <=8 Simple (password type not supported) - Error:"Could not get the type property. This command is not supported."
 */
-angular.module('io.modernizr')
+angular.module('io.modernizr', [])
 .directive('placeholder', ['$timeout', function($timeout) {
 	return {
 		restrict: 'A',
